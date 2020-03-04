@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- PAGE TITLE -->
+        <title>FMetronome - Alpha 1.0</title>
+    </head>
+      
+    <body>
+        <!-- JS -->
+        <script type="text/javascript"></script>
+        
+        <div class = "container" align="center">
+            <h1>FMetronome</h1>
+            <br>
+            
+            <p>Set BPM <i>(20 - 300)</i></p>
+            <br>
+            <form>
+                <div class="input-field" style="width:18%">
+                    <input type="number" id="bpm">
+                    <label>BPM</label>
+                </div>
+            </form>
+            
+            <br>
+            <button class="btn yellow waves-effect waves-light black-text" onclick="metronomePress();" id="metronomeButton">PLAY</button>
+        </div>
+        
+        <br>
+        <hr>
+        
+        
+        <p align="center">Sound Sample</p>
+        <select class="browser-default" id="soundsDropdown">
+            <option value="Metronome">Metronome</option>
+            <option value="Shaker">Shaker</option>
+            <option value="Rim">Rim</option>
+            <option value="Stick">Stick</option>
+        </select>
+        
+        <!-- Github link etc -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p align="center"><u>Flat Metronome (FMetronome)</u></p>
+        <p align="center"><b><a href="https://github.com/elevchyt">https://github.com/elevchyt</a></b></p> 
+        <p align="center"><small >Alpha Version 1.0</small></p>
+        
+        <!-- Sounds JS File -->
+        <script src="sounds.js" type="text/javascript"></script>
+        
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
